@@ -2,6 +2,7 @@
 // Home/Landing Page
 import { motion } from 'framer-motion';
 import Button from '../components/ui/Button';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
