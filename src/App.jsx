@@ -10,12 +10,18 @@ import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import NotFound from './pages/NotFound';
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 
 function App() {
   return (
     <Router>
       <Layout>
-        <Analytics />
+        <>
+          <Analytics />
+          <SpeedInsights />
+        </>
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
